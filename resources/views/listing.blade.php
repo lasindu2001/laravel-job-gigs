@@ -6,7 +6,7 @@
     ><i class="fa-solid fa-arrow-left"></i> Back
 </a>
 <div class="mx-4">
-    <x-card>
+    <x-card class="bg-black">
         <div
             class="flex flex-col items-center justify-center text-center"
         >
