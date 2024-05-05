@@ -46,7 +46,7 @@ class ListingController extends Controller
 
         Listing::create($formFields);
 
-        return redirect('/')->with('message', 'Listing created successfully');
+        return redirect('/')->with('message', 'Listing Created Successfully');
 
     }
 
@@ -75,7 +75,13 @@ class ListingController extends Controller
 
         $listing->update($formFields);
 
-        return back()->with('message', 'Listing updated successfully');
+        return back()->with('message', 'Listing Updated Successfully');
 
+    }
+
+    // Delete Listing
+    public function destroy(Listing $listing){
+        $listing->delete();
+        return redirect('/')->with('message', 'Listing Deleted Successfully');
     }
 }
